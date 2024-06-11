@@ -1,0 +1,34 @@
+.hero {
+  padding: 20px;
+}
+.hero__container {
+  display: flex;
+  align-items: center;
+}
+.hero__container--left {
+  width: 50%;
+  height: 500px;
+}
+.hero__container--right {
+  display: flex;
+  height: 500px;
+  width: 50%;
+  justify-content: flex-end;
+}
+.hero__container--right img {
+  height: 400px;
+}
+.hero__container--left h1 {
+  color: #00cc66;
+  font-size: 4rem;
+}
+.hero__container--left h2 {
+  color: #222121;
+  font-size: 4rem;
+}
+.hero__container--left p {
+  font-size: 2rem;
+  color: #222121;
+  margin-top: 1rem;
+  font-weight: 700;
+}/*# sourceMappingURL=hero.css.map */

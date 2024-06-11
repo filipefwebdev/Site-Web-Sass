@@ -1,0 +1,40 @@
+@import "./colors.scss";
+
+.hero {
+  padding: 20px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
+  &__container--left {
+    width: 50%;
+    height: 500px;
+  }
+
+  &__container--right {
+    display: flex;
+    height: 500px;
+    width: 50%;
+    justify-content: flex-end;
+  }
+
+  &__container--right img {
+    height: 400px;
+  }
+
+  &__container--left h1 {
+    color: $lime;
+    font-size: 4rem;
+  }
+  &__container--left h2 {
+    color: $dark;
+    font-size: 4rem;
+  }
+  &__container--left p {
+    font-size: 2rem;
+    color: $dark;
+    margin-top: 1rem;
+    font-weight: 700;
+  }
+}
