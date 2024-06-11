@@ -1,4 +1,4 @@
-![Picture]()
+![Picture](https://github.com/filipefwebdev/Site-Web-Sass/blob/master/Images/sass.png)
 
 Ce projet est un site web simple utilisant HTML, CSS et SASS. Il comprend une barre de navigation, une section de héros, et un loader. Ce README fournit des instructions pour installer et exécuter le projet localement.
 
