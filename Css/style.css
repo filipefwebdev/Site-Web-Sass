@@ -160,16 +160,17 @@
   .hero__container--left,
   .hero__container--right {
     flex: 1; /* Les sections prennent chacune 50% de la largeur */
+    text-align: center;
   }
   .hero__container--left h1,
   .hero__container--left h2 {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
   .hero__container--left p {
     font-size: 2rem;
   }
   .hero__container--right img {
-    height: 30 rem;
+    height: 50%;
   }
 }
 .hero__container--btn:hover {
