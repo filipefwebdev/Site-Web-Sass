@@ -6,6 +6,40 @@
   font-family: "Kumbh Sans", sans-serif;
 }
 
+.loader {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  height: 100vh;
+  inset: 0;
+  z-index: 11;
+  opacity: 0.9;
+  animation: disappear 150ms 2s forwards;
+}
+@keyframes disappear {
+  to {
+    transform: scale(0);
+  }
+}
+.spinner {
+  display: grid;
+  position: relative;
+  place-items: center center;
+  width: 126px;
+  height: 126px;
+  border: 4.5px solid rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  border-right-color: #00cc66;
+  border-left-color: #fb4b4e;
+  animation: spin 2s infinite linear;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
 .navbar {
   background-color: #f7f7f7;
   height: 80px;
@@ -66,11 +100,20 @@
 .hero__container {
   display: flex;
   align-items: center;
-  flex-wrap: wrap; /* Permet aux éléments de se répartir sur plusieurs lignes */
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.hero__container--left, .hero__container--right {
-  flex: 1 1 100%; /* Permet aux sections de prendre toute la largeur disponible */
-  text-align: center; /* Centre le texte pour les petits écrans */
+.hero__container--left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero__container--right {
+  display: flex;
+  justify-content: center;
+}
+.hero .hero__container--img {
+  display: flex;
 }
 .hero__container--left h1 {
   color: #00cc66;
@@ -126,7 +169,7 @@
     font-size: 2rem;
   }
   .hero__container--right img {
-    height: 400px;
+    height: 30 rem;
   }
 }
 .hero__container--btn:hover {

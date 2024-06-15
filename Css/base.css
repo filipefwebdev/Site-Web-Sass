@@ -3,4 +3,39 @@
   margin: 0;
   padding: 0;
   font-family: "Kumbh Sans", sans-serif;
+}
+
+.loader {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  height: 100vh;
+  inset: 0;
+  z-index: 11;
+  opacity: 0.9;
+  animation: disappear 150ms 2s forwards;
+}
+@keyframes disappear {
+  to {
+    transform: scale(0);
+  }
+}
+.spinner {
+  display: grid;
+  position: relative;
+  place-items: center center;
+  width: 126px;
+  height: 126px;
+  border: 4.5px solid rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  border-right-color: #00cc66;
+  border-left-color: #fb4b4e;
+  animation: spin 2s infinite linear;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
 }/*# sourceMappingURL=base.css.map */
